@@ -131,7 +131,6 @@ $$\mathbf{x} =\begin{bmatrix}x_{1}  \\x_{2}  \\ \vdots  \\x_{n}\end{bmatrix},$$
 
 
 where $x_1, \ldots, x_n$ are elements of the vector.
-In code,
 we (**access any element by indexing into the tensor.**)
 
 ```{.python .input}
@@ -147,6 +146,11 @@ x[3]
 #@tab tensorflow
 x[3]
 ```
+
+Note that in :numref:`eq_vec_def`, the subscripts begin at $1$ rather than $0$; 
+this convention, called *one-based indexing*, and is commonly used when writing mathematical equations. 
+Python, on the other hand, like most programming languages, uses *zero-based indexing*;
+in zero-based indexing, the first element of a vector is at subscript $0$.
 
 ### Length, Dimensionality, and Shape
 
